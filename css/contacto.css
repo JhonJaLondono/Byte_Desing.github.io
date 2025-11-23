@@ -1,0 +1,210 @@
+
+.contacto-body {
+    background: linear-gradient(135deg, #0f0f1a, #1a1a2e, #16213e);
+    color: #e0e0ff;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+}
+
+/* Header transparente */
+.header-contacto {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: rgba(10, 10, 30, 0.4);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(100, 120, 200, 0.2);
+}
+
+.header-contacto .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #bbdefb;
+}
+
+.header-contacto .nav a {
+    color: #bbdefb;
+    margin: 0 18px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header-contacto .nav a.active,
+.header-contacto .nav a:hover {
+    color: white;
+    text-shadow: 0 0 10px rgba(187, 222, 251, 0.6);
+}
+
+/* Hero nocturno */
+.hero-contacto {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle at center, rgba(10,20,50,0.6), rgba(0,0,20,0.95));
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    font-size: 5.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #e3f2fd;
+    text-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.6rem;
+    color: #90caf9;
+    opacity: 0.9;
+}
+
+/* Formulario estilo carta */
+.form-section {
+    padding: 100px 0 140px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-form {
+    width: 100%;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.form-card {
+    background: rgba(30, 40, 80, 0.65);
+    backdrop-filter: blur(15px);
+    padding: 60px 50px;
+    border-radius: 24px;
+    border: 1px solid rgba(100, 150, 255, 0.2);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.form-card h2 {
+    font-size: 2.6rem;
+    text-align: center;
+    color: #e3f2fd;
+    margin-bottom: 15px;
+}
+
+.intro-text {
+    text-align: center;
+    color: #90caf9;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(100, 150, 255, 0.3);
+    border-radius: 12px;
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: #90caf9;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: #64b5f6;
+    background: rgba(255,255,255,0.12);
+    box-shadow: 0 0 20px rgba(100, 180, 255, 0.3);
+}
+
+.btn-send {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(90deg, #42a5f5, #1e88e5);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s;
+    box-shadow: 0 10px 30px rgba(30, 100, 200, 0.4);
+}
+
+.btn-send:hover {
+    background: linear-gradient(90deg, #64b5f6, #42a5f5);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(30, 100, 200, 0.6);
+}
+
+.note {
+    text-align: center;
+    margin-top: 30px;
+    color: #90caf9;
+    font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-text h1 { font-size: 3.8rem; }
+    .form-card { padding: 40px 30px; }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 { font-size: 3rem; }
+    .header-contacto .nav { flex-direction: column; gap: 10px; }
+}
+
+
+.footer-simple {
+    padding: 80px 20px;
+    background: linear-gradientrgba(30, 100, 200, 0.6);
+    text-align: center;
+    border-top: 1px solid rgba(168, 230, 207, 0.25); 
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-main {
+    font-size: 1.18rem;
+    font-weight: 500;
+    color: #e8f5e8;
+    margin: 0 0 12px 0;
+    line-height: 1.4;
+}
+
+.footer-contact {
+    font-size: 1.1rem;
+    color: #c8e6c9;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.footer-contact a {
+    color: #d0e8d5}

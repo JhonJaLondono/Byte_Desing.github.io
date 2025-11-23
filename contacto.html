@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Byte Desing</title>
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body class="contacto-body">
+
+    <!-- Header minimalista y transparente -->
+    <header class="header-contacto">
+        <div class="logo">Byte Desing</div>
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html" class="active">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Hero nocturno con mensaje emotivo -->
+    <section class="hero-contacto">
+        <div class="hero-overlay"></div>
+        <div class="hero-text">
+            <h1>Aquí puedes<br>dejar salir todo</h1>
+            <p class="subtitle">Escribe lo que necesites. No estás solo(a).</p>
+        </div>
+    </section>
+
+    <!-- Formulario estilo carta manuscrita -->
+    <section class="form-section">
+        <div class="container-form">
+            <div class="form-card">
+                <h2>Cuéntanos lo que sientes</h2>
+                <p class="intro-text">
+                    No importa la hora, no importa el tema. Este espacio es tuyo.
+                </p>
+
+                <form id="contactForm">
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Tu nombre (o déjalo en blanco si prefieres ser anónimo)" >
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Tu correo (opcional – solo si quieres respuesta)" >
+                    </div>
+
+                    <div class="input-group textarea-group">
+                        <textarea id="message" rows="10" placeholder="Aquí va todo lo que llevas dentro..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-send">
+                        Enviar mensaje
+                    </button>
+                </form>
+
+                <p class="note">
+                    Te responderemos en menos de 24 horas con cariño y sin juicios.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer igual que las otras páginas internas -->
+    <footer class="footer-simple">
+        <div class="container">
+            <p>© 2025 Byte Desing — Un espacio para ser escuchado.</p>
+            <p class="contact-info">
+                Contacto: tmajhon1998@gmail.com | Tel: 322 202 1293
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Mensaje de confirmación simple
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("¡Mensaje enviado! Gracias por confiar en nosotros. Te responderemos muy pronto con todo el cariño del mundo.");
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
